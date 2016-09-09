@@ -56,12 +56,16 @@
             />
     </LinearLayout>
     <TextView
-        android:id="@+id/info"
+        android:id="@+id/infoText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/buttonline"
         android:layout_below="@id/topline"
         android:background="#0ff"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:textColor="#f00"
+
         />
 
 
