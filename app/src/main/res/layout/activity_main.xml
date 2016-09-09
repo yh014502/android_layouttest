@@ -6,6 +6,7 @@
 
 >
     <RelativeLayout
+        android:id="@+id/topline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff0"
@@ -18,16 +19,50 @@
             android:text="guess"
             />
         <EditText
+            android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@id/guess"
             android:layout_alignTop="@id/guess"
             android:layout_alignBottom="@id/guess"
-            android:text="請輸入欲猜的數字"
             />
 
     </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/buttonline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重頭"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="在猜一次"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="結束遊戲"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonline"
+        android:layout_below="@id/topline"
+        android:background="#0ff"
+        />
 
 
 </RelativeLayout>
